@@ -2,92 +2,102 @@
 
 import {
     FaHammer,
-    FaHome,
-    FaWarehouse,
+    FaSwimmingPool,
     FaTools,
-    FaRulerCombined,
-    FaPaintRoller
+    FaHardHat,
+    FaShieldAlt,
+    FaWarehouse,
+    FaFileInvoiceDollar
 } from 'react-icons/fa';
 
 const Services = () => {
     const services = [
         {
-            icon: FaHammer,
-            title: 'Albañilería General',
-            description: 'Muros, revoques, contrapisos y mampostería de alta calidad.',
+            icon: FaHardHat,
+            title: 'Obra Nueva Tradicional y Seco',
+            description: 'Ejecución integral de viviendas y proyectos desde cero. Expertos en sistemas tradicionales y Steel Frame de alta eficiencia.',
         },
         {
-            icon: FaHome,
-            title: 'Construcciones Tradicionales',
-            description: 'Viviendas y edificaciones residenciales con métodos probados.',
-        },
-        {
-            icon: FaWarehouse,
-            title: 'Galpones y Tinglados',
-            description: 'Estructuras metálicas resistentes para uso industrial y comercial.',
+            icon: FaSwimmingPool,
+            title: 'Quinchos y Piletas',
+            description: 'Diseño y construcción de espacios de recreación. Garantizamos estanqueidad técnica y terminaciones estéticas de primer nivel.',
         },
         {
             icon: FaTools,
-            title: 'Steel Frame',
-            description: 'Construcción en seco rápida, eficiente y térmica.',
+            title: 'Reformas y Renovaciones',
+            description: 'Especialistas en remodelación de cocinas y baños. Optimizamos la funcionalidad y estética de los ambientes más vitales de tu hogar.',
         },
         {
-            icon: FaRulerCombined,
-            title: 'Good Frame',
-            description: 'Estructuras de acero galvanizado liviano de última tecnología.',
+            icon: FaHammer,
+            title: 'Ampliaciones y Remodelaciones',
+            description: 'Transformamos espacios existentes con soluciones rápidas y eficaces en construcción tradicional o en seco.',
         },
         {
-            icon: FaPaintRoller,
-            title: 'Revestimientos',
-            description: 'Colocación de cerámicos, porcelanatos y revestimientos plásticos.',
+            icon: FaFileInvoiceDollar,
+            title: 'Instalaciones Especializadas',
+            description: 'Servicios profesionales de plomería, electricidad y pintura bajo normas de seguridad vigentes para un acabado impecable.',
         },
+        {
+            icon: FaShieldAlt,
+            title: 'Mantenimiento e Impermeabilización',
+            description: 'Protección avanzada de techos y terrazas. Soluciones definitivas para garantizar la durabilidad de la estructura ante el clima.',
+        },
+        {
+            icon: FaWarehouse,
+            title: 'Galpones y Estructuras',
+            description: 'Ingeniería aplicada a naves industriales y tinglados rurales con máxima resistencia mecánica.',
+        }
     ];
 
     return (
         <section id="servicios" className="py-24 bg-white">
             <div className="container-custom mx-auto">
 
-                {/* Encabezado con Texto Institucional Agregado */}
-                <div className="max-w-3xl mb-16 md:mb-20">
-                    <span className="text-[#1e3a8a] font-bold tracking-wider uppercase text-sm mb-2 block">Lo que hacemos</span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-6">Nuestros Servicios</h2>
+                {/* Encabezado con Copy Estratégico */}
+                <div className="max-w-4xl mb-16 md:mb-20">
+                    <span className="text-[#ea580c] font-bold tracking-wider uppercase text-sm mb-2 block">Soluciones de Ingeniería</span>
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#1e293b] mb-8 uppercase font-display bg-clip-text text-transparent bg-gradient-to-r from-[#1e293b] to-[#64748b]">
+                        Servicio de Construcción Integral
+                    </h2>
 
-                    {/* TEXTO OFICIAL AGREGADO */}
-                    <div className="text-lg text-[#475569] leading-relaxed space-y-4 border-l-4 border-[#1e3a8a] pl-6">
-                        <p>
-                            Ofrecemos un servicio de construcción integral, abarcando obras nuevas, ampliaciones y remodelaciones, tanto en sistemas tradicionales como en construcción en seco.
+                    <div className="text-lg text-[#475569] leading-relaxed space-y-4 border-l-4 border-[#ea580c] pl-6 md:pl-8">
+                        <p className="font-semibold text-[#1e293b]">
+                            Ofrecemos un servicio de construcción integral que abarca obras nuevas, ampliaciones y remodelaciones, dominando tanto el sistema tradicional como la construcción en seco de vanguardia.
                         </p>
-                        <p>
-                            Cada proyecto es ejecutado cuidando los detalles, la durabilidad de los materiales y la correcta ejecución técnica, integrando todos los servicios listados a continuación como parte de una solución constructiva completa.
+                        <p className="text-base">
+                            Cada proyecto es ejecutado bajo normas de excelencia, cuidando meticulosamente los detalles técnicos, la durabilidad de los materiales y la total funcionalidad de los espacios. Nuestra capacidad operativa nos permite integrar todas las especialidades en una solución completa y profesional.
                         </p>
                     </div>
                 </div>
 
-                {/* Grilla de Servicios (Existente - No modificada) */}
+                {/* Grilla de Servicios Mejorada */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group p-8 bg-[#f8fafc] border border-gray-100 hover:border-[#1e3a8a] rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                            className="group p-8 bg-[#f8fafc] border border-gray-100 hover:border-[#ea580c] rounded-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 bg-gradient-to-b from-white to-[#f8fafc]"
                         >
-                            <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center border border-gray-200 mb-6 group-hover:scale-110 transition-transform shadow-sm">
-                                <service.icon className="text-2xl text-[#1e3a8a]" />
+                            <div className="w-16 h-16 bg-[#0f172a] rounded-sm flex items-center justify-center mb-6 group-hover:bg-[#ea580c] transition-colors duration-500 shadow-lg">
+                                <service.icon className="text-2xl text-white" />
                             </div>
 
-                            <h3 className="text-xl font-bold text-[#1e293b] mb-3 group-hover:text-[#1e3a8a] transition-colors">
+                            <h3 className="text-xl font-bold text-[#1e293b] mb-4 group-hover:text-[#ea580c] transition-colors uppercase font-display tracking-tight">
                                 {service.title}
                             </h3>
 
-                            <p className="text-[#475569] leading-relaxed">
+                            <p className="text-[#475569] leading-relaxed text-sm md:text-base">
                                 {service.description}
                             </p>
+
+                            <div className="mt-6 w-10 h-1 bg-gray-200 group-hover:w-full group-hover:bg-[#ea580c] transition-all duration-500"></div>
                         </div>
                     ))}
                 </div>
 
-                <div className="mt-16 text-center">
-                    <a href="#contacto" className="inline-block px-8 py-3 bg-[#1e293b] text-white font-bold rounded hover:bg-[#0f172a] transition-colors shadow-lg">
-                        Solicitar Asesoramiento Personalizado
+                <div className="mt-20 text-center">
+                    <a href="#contacto" className="inline-flex items-center gap-3 px-10 py-5 bg-[#0f172a] text-white font-bold rounded-sm hover:bg-[#ea580c] transition-all shadow-2xl uppercase tracking-widest text-sm">
+                        Iniciar mi proyecto ahora
+                        <FaHammer className="animate-pulse" />
                     </a>
                 </div>
 
