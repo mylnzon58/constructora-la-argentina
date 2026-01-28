@@ -6,7 +6,6 @@ import { FaTimes, FaSearchPlus } from 'react-icons/fa';
 const Portfolio = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 
-    // Imágenes reales generadas para visualización profesional
     const projects = [
         {
             id: 1,
@@ -37,7 +36,7 @@ const Portfolio = () => {
             title: 'Ampliación Residencial',
             category: 'Tradicional',
             location: 'Barrio San Judas',
-            image: '/obras/obra-vivienda.png', // Reutilizamos imagen acorde al contexto
+            image: '/obras/obra-vivienda.png',
             description: 'Ampliación de planta alta respetando la arquitectura existente.',
         },
         {
@@ -45,7 +44,7 @@ const Portfolio = () => {
             title: 'Tinglado Rural',
             category: 'Estructuras',
             location: 'Zona Rural',
-            image: '/obras/obra-galpon.png', // Reutilizamos imagen acorde
+            image: '/obras/obra-galpon.png',
             description: 'Techado parabólico para guarda de maquinaria agrícola.',
         },
         {
@@ -53,7 +52,7 @@ const Portfolio = () => {
             title: 'Remodelación Comercial',
             category: 'Comercial',
             location: 'Villaguay',
-            image: '/obras/obra-revestimiento.png', // Reutilizamos imagen acorde
+            image: '/obras/obra-revestimiento.png',
             description: 'Renovación de fachada y aplicación de revestimientos plásticos.',
         }
     ];
@@ -74,7 +73,6 @@ const Portfolio = () => {
                             className="group bg-white rounded-lg overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer"
                             onClick={() => setSelectedImage(project)}
                         >
-                            {/* IMAGEN DE CARD - Aspect Ratio fijo */}
                             <div className="aspect-[4/3] bg-gray-100 overflow-hidden relative">
                                 <img
                                     src={project.image}
@@ -86,7 +84,6 @@ const Portfolio = () => {
                                 </div>
                             </div>
 
-                            {/* TEXTO DE CARD - Fondo blanco para legibilidad perfecta */}
                             <div className="p-6">
                                 <div className="flex justify-between items-center mb-2">
                                     <span className="text-xs font-bold text-[#1e3a8a] bg-[#eff6ff] px-2 py-1 rounded uppercase tracking-wide">
@@ -103,9 +100,18 @@ const Portfolio = () => {
                         </div>
                     ))}
                 </div>
+
+                {/* TEXTO DE APOYO AGREGADO */}
+                <div className="mt-12 p-6 bg-[#f8fafc] rounded-lg border border-gray-200 text-center md:text-left">
+                    <p className="text-sm text-[#64748b] leading-relaxed italic">
+                        <strong>Nota:</strong> Las obras exhibidas corresponden a trabajos realizados y ejemplos ilustrativos.
+                        Cada proyecto representa nuestro compromiso con la calidad, la seguridad y la correcta ejecución técnica.
+                    </p>
+                </div>
+
             </div>
 
-            {/* Modal Lightbox mejorado */}
+            {/* Modal Lightbox */}
             {selectedImage && (
                 <div className="fixed inset-0 z-[60] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4" onClick={() => setSelectedImage(null)}>
                     <button className="absolute top-4 right-4 text-white hover:text-gray-300 z-50 p-2">

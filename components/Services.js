@@ -47,23 +47,30 @@ const Services = () => {
         <section id="servicios" className="py-24 bg-white">
             <div className="container-custom mx-auto">
 
-                {/* Encabezado de sección con márgenes correctos */}
-                <div className="max-w-2xl mb-16 px-4 md:px-0">
-                    <span className="text-[#1e3a8a] font-bold tracking-wider uppercase text-sm mb-2 block">Nuestros Servicios</span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-6">Soluciones Profesionales para cada Necesidad</h2>
-                    <p className="text-lg text-[#475569] leading-relaxed">
-                        Ofrecemos un abanico completo de soluciones constructivas, desde la obra tradicional hasta los sistemas más modernos del mercado.
-                    </p>
+                {/* Encabezado con Texto Institucional Agregado */}
+                <div className="max-w-3xl mb-16 md:mb-20">
+                    <span className="text-[#1e3a8a] font-bold tracking-wider uppercase text-sm mb-2 block">Lo que hacemos</span>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-6">Nuestros Servicios</h2>
+
+                    {/* TEXTO OFICIAL AGREGADO */}
+                    <div className="text-lg text-[#475569] leading-relaxed space-y-4 border-l-4 border-[#1e3a8a] pl-6">
+                        <p>
+                            Ofrecemos un servicio de construcción integral, abarcando obras nuevas, ampliaciones y remodelaciones, tanto en sistemas tradicionales como en construcción en seco.
+                        </p>
+                        <p>
+                            Cada proyecto es ejecutado cuidando los detalles, la durabilidad de los materiales y la correcta ejecución técnica, integrando todos los servicios listados a continuación como parte de una solución constructiva completa.
+                        </p>
+                    </div>
                 </div>
 
-                {/* Grilla de tarjetas con espaciado generoso */}
+                {/* Grilla de Servicios (Existente - No modificada) */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group p-8 bg-[#f8fafc] border border-gray-100 hover:border-[#1e3a8a] rounded-xl transition-all duration-300 hover:shadow-lg"
+                            className="group p-8 bg-[#f8fafc] border border-gray-100 hover:border-[#1e3a8a] rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                         >
-                            <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center border border-gray-200 mb-6 group-hover:scale-110 transition-transform">
+                            <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center border border-gray-200 mb-6 group-hover:scale-110 transition-transform shadow-sm">
                                 <service.icon className="text-2xl text-[#1e3a8a]" />
                             </div>
 
@@ -79,8 +86,8 @@ const Services = () => {
                 </div>
 
                 <div className="mt-16 text-center">
-                    <a href="#contacto" className="inline-block px-8 py-3 bg-[#1e293b] text-white font-bold rounded hover:bg-[#0f172a] transition-colors">
-                        Solicitar Asesoramiento
+                    <a href="#contacto" className="inline-block px-8 py-3 bg-[#1e293b] text-white font-bold rounded hover:bg-[#0f172a] transition-colors shadow-lg">
+                        Solicitar Asesoramiento Personalizado
                     </a>
                 </div>
 

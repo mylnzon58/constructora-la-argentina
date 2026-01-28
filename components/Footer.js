@@ -1,6 +1,6 @@
 'use client';
 
-import { FaWhatsapp, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -9,9 +9,9 @@ const Footer = () => {
 
     const quickLinks = [
         { href: '#inicio', label: 'Inicio' },
-        { href: '#nosotros', label: 'Nosotros' },
+        { href: '#nosotros', label: 'Empresa' },
         { href: '#servicios', label: 'Servicios' },
-        { href: '#obras', label: 'Obras' },
+        { href: '#obras', label: 'Proyectos' },
         { href: '#contacto', label: 'Contacto' },
     ];
 
@@ -38,18 +38,22 @@ const Footer = () => {
                                 />
                             </div>
                         </div>
-                        <p className="text-slate-300 text-sm leading-relaxed mb-6">
-                            Cooperativa de construcción habilitada en Villaguay, Entre Ríos.
-                            Compromiso, calidad y responsabilidad en cada obra.
-                        </p>
-                        <div className="flex gap-2 text-sm text-slate-400">
+
+                        {/* TEXTO INSTITUCIONAL OFICIAL */}
+                        <div className="space-y-2 mb-6 text-sm text-slate-300 leading-relaxed">
+                            <p className="font-bold text-white">COOP. I.A. ARGENTINA LTDA.</p>
+                            <p>Cooperativa de construcción habilitada en Villaguay, Entre Ríos.</p>
+                            <p>Compromiso, calidad y responsabilidad en cada obra.</p>
+                        </div>
+
+                        <div className="flex gap-2 text-xs text-slate-500 uppercase tracking-wider font-semibold">
                             <span>Licencia Municipal Vigente</span>
                         </div>
                     </div>
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="font-bold text-lg text-white mb-6">Navegación</h3>
+                        <h3 className="font-bold text-lg text-white mb-6 uppercase tracking-wider">Navegación</h3>
                         <ul className="space-y-3">
                             {quickLinks.map((link) => (
                                 <li key={link.href}>
@@ -66,7 +70,7 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div>
-                        <h3 className="font-bold text-lg text-white mb-6">Contacto</h3>
+                        <h3 className="font-bold text-lg text-white mb-6 uppercase tracking-wider">Contacto</h3>
                         <ul className="space-y-4">
                             <li>
                                 <a
@@ -90,14 +94,17 @@ const Footer = () => {
                             </li>
                             <li className="flex items-start gap-3 text-slate-300">
                                 <FaMapMarkerAlt className="text-lg text-red-400 mt-0.5" />
-                                <span className="text-sm">Balcarce 589<br />Villaguay, Entre Ríos</span>
+                                <span className="text-sm leading-relaxed">
+                                    Balcarce 589 – E3240<br />
+                                    Villaguay, Entre Ríos, Argentina
+                                </span>
                             </li>
                         </ul>
                     </div>
 
                     {/* Legal */}
                     <div>
-                        <h3 className="font-bold text-lg text-white mb-6">Legal</h3>
+                        <h3 className="font-bold text-lg text-white mb-6 uppercase tracking-wider">Legal</h3>
                         <ul className="space-y-3 mb-6">
                             {legalLinks.map((link) => (
                                 <li key={link.href}>
@@ -115,13 +122,15 @@ const Footer = () => {
             </div>
 
             <div className="border-t border-slate-800 bg-[#020617]">
-                <div className="container-custom mx-auto py-6">
+                <div className="container-custom mx-auto py-8">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
                         <div>
-                            © {currentYear} COOP. I.A. ARGENTINA LTDA.
+                            © {currentYear} COOP. I.A. ARGENTINA LTDA. Todos los derechos reservados.
                         </div>
                         <div>
-                            Desarrollado con estándares profesionales.
+                            <a href="https://constructoralaargentina.com" className="hover:text-slate-300 transition-colors">
+                                www.constructoralaargentina.com
+                            </a>
                         </div>
                     </div>
                 </div>

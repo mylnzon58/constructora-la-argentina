@@ -20,21 +20,22 @@ const Hero = () => {
             <div className="container-custom relative z-20 mx-auto h-full flex items-center">
                 <div className="max-w-4xl pt-12">
 
-                    {/* Badge Superior - RESPONSIVO CORREGIDO: Tracking reducido en móvil */}
+                    {/* Badge Superior */}
                     <div className="inline-flex items-center gap-2 pl-1 pr-3 sm:pr-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/10 text-white text-[10px] sm:text-xs font-bold uppercase tracking-wide sm:tracking-[0.2em] rounded-full mb-6 sm:mb-8 max-w-full">
                         <span className="bg-[#ea580c] text-white px-2 py-0.5 rounded-full text-[9px] sm:text-[10px] flex-shrink-0 shadow-sm">OFICIAL</span>
                         <span className="truncate">Cooperativa Habilitada</span>
                     </div>
 
-                    {/* TÍTULO H1 TIPOGRÁFICO */}
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-none mb-6 tracking-tight drop-shadow-lg" data-aos="fade-up">
-                        CONSTRUCCIÓN <br />
-                        <span className="text-[#94a3b8]">PROFESIONAL</span>
+                    {/* TÍTULO H1 TIPOGRÁFICO - Contenido Institucional Adaptado */}
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none mb-6 tracking-tight drop-shadow-lg uppercase" data-aos="fade-up">
+                        ¡CONCRETÁ TUS IDEAS <br />
+                        <span className="text-[#94a3b8]">CON CALIDAD!</span>
                     </h1>
 
-                    <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mb-12 font-light border-l-4 border-[#ea580c] pl-6" data-aos="fade-up" data-aos-delay="100">
-                        <strong className="text-white font-bold">COOP. I.A. ARGENTINA LTDA.</strong><br />
-                        Maestros Mayores de Obra especializados en Steel Frame, obras industriales y construcción tradicional en Villaguay.
+                    {/* Texto Institucional */}
+                    <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl mb-12 font-light border-l-4 border-[#ea580c] pl-6" data-aos="fade-up" data-aos-delay="100">
+                        Con experiencia en el sector, ofrecemos servicios de construcción integral en Entre Ríos, adaptándonos a cada proyecto con compromiso y calidad. <br /><br />
+                        <strong className="text-white">Construcción, remodelación y ampliaciones con un enfoque profesional, responsable y orientado a resultados reales.</strong>
                     </p>
 
                     {/* Botones Profesionales */}

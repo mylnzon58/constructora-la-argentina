@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { FaWhatsapp, FaPhone, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
+import { FaWhatsapp, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -108,8 +108,11 @@ const Contact = () => {
                                     <FaMapMarkerAlt size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-[#1e293b] text-lg">Oficina</h3>
-                                    <p className="text-[#64748b]">Balcarce 589, Villaguay</p>
+                                    <h3 className="font-bold text-[#1e293b] text-lg">Oficina Comercial</h3>
+                                    <p className="text-[#64748b] whitespace-pre-line">
+                                        Balcarce 589 – E3240<br />
+                                        Villaguay, Entre Ríos, Argentina
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +191,6 @@ const Contact = () => {
                                 {errors.mensaje && <p className="text-red-500 text-sm mt-1">{errors.mensaje}</p>}
                             </div>
 
-                            {/* BOTÓN WHATSAPP CORREGIDO: Verde, centrado, buen padding */}
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
