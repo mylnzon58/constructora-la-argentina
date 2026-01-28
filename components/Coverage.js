@@ -17,11 +17,12 @@ const Coverage = () => {
     ];
 
     return (
-        <section id="alcance" className="section-padding bg-white">
-            <div className="container-custom">
-                <div className="section-title" data-aos="fade-up">
-                    <h2 className="text-[#0f172a]">Alcance Geográfico</h2>
-                    <p className="text-[#475569]">Nuestra área de cobertura en Entre Ríos</p>
+        <section id="alcance" className="section-padding bg-white py-24">
+            <div className="container-custom mx-auto">
+                <div className="text-center md:text-left mb-16" data-aos="fade-up">
+                    <span className="text-[#1e3a8a] font-bold tracking-wider uppercase text-sm mb-2 block">Territorio</span>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b]">Alcance Geográfico</h2>
+                    <p className="text-[#475569] mt-4 max-w-2xl">Nuestra área de cobertura actual y proyección en Entre Ríos</p>
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -64,10 +65,6 @@ const Coverage = () => {
                                 </div>
                             </div>
                         </div>
-
-                        <p className="mt-4 text-center text-sm text-[#64748b] italic">
-                            Mapa ilustrativo de nuestra zona de influencia principal.
-                        </p>
                     </div>
 
                     {/* Locations List */}
@@ -134,8 +131,8 @@ const Coverage = () => {
                                 ))}
                             </div>
 
-                            {/* Disclaimer Box */}
-                            <div className="mt-8 bg-[#f8fafc] border-l-4 border-[#94a3b8] p-5 rounded-r-lg">
+                            {/* Disclaimer Box - Con margen inferior añadido para separación */}
+                            <div className="mt-8 bg-[#f8fafc] border-l-4 border-[#94a3b8] p-5 rounded-r-lg mb-16">
                                 <p className="text-sm text-[#475569] leading-relaxed">
                                     <strong className="text-[#334155]">Nota importante:</strong> Actualmente operamos exclusivamente en Villaguay.
                                     Las localidades marcadas como "en evaluación" son parte de nuestro plan estratégico de expansión a largo plazo.
