@@ -41,7 +41,7 @@ const Hero = () => {
                     {/* Botones Profesionales */}
                     <div className="flex flex-col sm:flex-row gap-5" data-aos="fade-up" data-aos-delay="200">
                         <a
-                            href="https://wa.me/543455456696"
+                            href="#contacto"
                             className="inline-flex justify-center items-center gap-3 px-8 py-4 bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold rounded-sm text-lg transition-all shadow-lg hover:shadow-orange-500/20 group"
                         >
                             Contactar Ahora

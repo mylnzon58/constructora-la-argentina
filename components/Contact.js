@@ -83,7 +83,7 @@ const Contact = () => {
                         </p>
 
                         <div className="space-y-6">
-                            <a href="https://wa.me/543455456696" className="flex items-center gap-5 p-6 bg-white border border-gray-200 rounded-xl hover:border-[#25D366] hover:shadow-lg transition-all group">
+                            <a href="#contacto" className="flex items-center gap-5 p-6 bg-white border border-gray-200 rounded-xl hover:border-[#25D366] hover:shadow-lg transition-all group">
                                 <div className="w-14 h-14 bg-[#25D366]/10 rounded-full flex items-center justify-center text-[#25D366] group-hover:bg-[#25D366] group-hover:text-white transition-colors">
                                     <FaWhatsapp size={28} />
                                 </div>

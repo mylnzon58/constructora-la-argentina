@@ -74,9 +74,7 @@ const Footer = () => {
                         <ul className="space-y-4">
                             <li>
                                 <a
-                                    href="https://wa.me/543455456696"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    href="#contacto"
                                     className="flex items-start gap-3 text-slate-300 hover:text-white transition-colors group"
                                 >
                                     <FaWhatsapp className="text-xl text-[#25D366] mt-0.5 group-hover:scale-110 transition-transform" />

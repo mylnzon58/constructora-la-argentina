@@ -62,9 +62,7 @@ const Navbar = () => {
 
                         {/* BOTÓN DE WHATSAPP */}
                         <a
-                            href="https://wa.me/543455456696"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="#contacto"
                             className="px-6 py-3 bg-[#1e293b] hover:bg-[#0f172a] text-white font-bold rounded-sm text-sm flex items-center gap-2 transition-all shadow-lg hover:shadow-xl"
                         >
                             <FaWhatsapp className="text-lg text-[#25D366]" />
@@ -97,7 +95,7 @@ const Navbar = () => {
                         ))}
                         <div className="p-4 bg-gray-50">
                             <a
-                                href="https://wa.me/543455456696"
+                                href="#contacto"
                                 className="w-full py-4 bg-[#1e293b] text-white font-bold text-center rounded flex justify-center items-center gap-2"
                             >
                                 <FaWhatsapp size={20} />
