@@ -197,7 +197,7 @@ export default function TerminosYCondiciones() {
                             <ul className="list-none pl-0 text-[var(--color-neutral-700)]">
                                 <li><strong>Dirección:</strong> Balcarce 589, Villaguay, Entre Ríos</li>
                                 <li><strong>Teléfono:</strong> +54 3455 456696</li>
-                                <li><strong>Email:</strong> info@constructoralaargentina.com</li>
+                                <li><strong>Email:</strong> coop.detrabajolaargentinaldta@gmail.com</li>
                             </ul>
                         </section>
                     </div>

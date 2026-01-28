@@ -238,7 +238,7 @@ export default function PoliticaDePrivacidad() {
                                 <li><strong>Responsable:</strong> Cooperativa de Construcción La Argentina</li>
                                 <li><strong>Dirección:</strong> Balcarce 589, Villaguay, Entre Ríos, Argentina</li>
                                 <li><strong>Teléfono:</strong> +54 3455 456696</li>
-                                <li><strong>Email:</strong> info@constructoralaargentina.com</li>
+                                <li><strong>Email:</strong> coop.detrabajolaargentinaldta@gmail.com</li>
                             </ul>
                         </section>
 

@@ -44,7 +44,7 @@ export default function AvisoLegal() {
                                 <li><strong>Tipo de entidad:</strong> Cooperativa de Trabajo</li>
                                 <li><strong>Domicilio:</strong> Balcarce 589, Villaguay, Entre Ríos, Argentina</li>
                                 <li><strong>Teléfono:</strong> +54 3455 456696</li>
-                                <li><strong>Email:</strong> info@constructoralaargentina.com</li>
+                                <li><strong>Email:</strong> coop.detrabajolaargentinaldta@gmail.com</li>
                                 <li><strong>Sitio web:</strong> constructoralaargentina.com</li>
                             </ul>
                         </section>
@@ -221,7 +221,7 @@ export default function AvisoLegal() {
                                 <li><strong>Dirección:</strong> Balcarce 589, Villaguay, Entre Ríos, Argentina</li>
                                 <li><strong>Teléfono:</strong> +54 3455 456696</li>
                                 <li><strong>WhatsApp:</strong> +54 3455 456696</li>
-                                <li><strong>Email:</strong> info@constructoralaargentina.com</li>
+                                <li><strong>Email:</strong> coop.detrabajolaargentinaldta@gmail.com</li>
                             </ul>
                         </section>
                     </div>

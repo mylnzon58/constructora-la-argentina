@@ -45,7 +45,7 @@ const Services = () => {
         {
             icon: FaWarehouse,
             title: 'Galpones y Estructuras',
-            description: 'Ingeniería aplicada a naves industriales y tinglados rurales con máxima resistencia mecánica.',
+            description: 'Ingeniería aplicada a galpones industriales y tinglados rurales con máxima resistencia mecánica.',
         }
     ];
 

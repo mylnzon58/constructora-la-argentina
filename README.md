@@ -189,7 +189,7 @@ En `components/About.js`, hay un aviso que indica que la historia, misión y vis
 ## 📞 Soporte
 
 Para consultas sobre el sitio web:
-- Email: info@constructoralaargentina.com
+- Email: coop.detrabajolaargentinaldta@gmail.com
 - WhatsApp: +54 3455 456696
 
 ---

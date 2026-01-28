@@ -85,11 +85,11 @@ const Footer = () => {
                             </li>
                             <li>
                                 <a
-                                    href="mailto:info@constructoralaargentina.com"
+                                    href="mailto:coop.detrabajolaargentinaldta@gmail.com"
                                     className="flex items-start gap-3 text-slate-300 hover:text-white transition-colors group"
                                 >
                                     <FaEnvelope className="text-lg text-blue-400 mt-0.5" />
-                                    <span className="text-sm">info@constructoralaargentina.com</span>
+                                    <span className="text-sm">coop.detrabajolaargentinaldta@gmail.com</span>
                                 </a>
                             </li>
                             <li className="flex items-start gap-3 text-slate-300">
