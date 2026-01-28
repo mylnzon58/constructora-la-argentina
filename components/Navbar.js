@@ -46,28 +46,28 @@ const Navbar = () => {
                         </a>
                     </div>
 
-                    {/* MENÚ ESCRITORIO */}
-                    <nav className="hidden lg:flex items-center gap-8 xl:gap-10">
-                        {navLinks.map((link) => (
-                            <a
-                                key={link.href}
-                                href={link.href}
-                                className="text-[#1e293b] hover:text-[#1e3a8a] font-bold text-sm uppercase tracking-wider transition-colors border-b-2 border-transparent hover:border-[#1e3a8a] pb-1"
-                            >
-                                {link.label}
-                            </a>
-                        ))}
-                    </nav>
+                    {/* MENÚ Y BOTÓN DERECHA */}
+                    <div className="hidden lg:flex items-center gap-10 xl:gap-16">
+                        <nav className="flex items-center gap-8 xl:gap-10">
+                            {navLinks.map((link) => (
+                                <a
+                                    key={link.href}
+                                    href={link.href}
+                                    className="text-[#1e293b] hover:text-[#1e3a8a] font-bold text-sm uppercase tracking-wider transition-colors border-b-2 border-transparent hover:border-[#1e3a8a] pb-1"
+                                >
+                                    {link.label}
+                                </a>
+                            ))}
+                        </nav>
 
-                    {/* BOTONES DE CONTACTO */}
-                    <div className="hidden lg:flex items-center gap-4">
+                        {/* BOTÓN DE WHATSAPP */}
                         <a
                             href="https://wa.me/543455456696"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-5 py-2.5 bg-[#1e293b] hover:bg-[#0f172a] text-white font-bold rounded text-sm flex items-center gap-2 transition-all shadow-sm"
+                            className="px-6 py-3 bg-[#1e293b] hover:bg-[#0f172a] text-white font-bold rounded-sm text-sm flex items-center gap-2 transition-all shadow-lg hover:shadow-xl"
                         >
-                            <FaWhatsapp className="text-lg text-[#4ade80]" />
+                            <FaWhatsapp className="text-lg text-[#25D366]" />
                             WhatsApp
                         </a>
                     </div>
