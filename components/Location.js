@@ -79,10 +79,10 @@ const Location = () => {
                                 href={googleMapsUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="btn-primary w-full shadow-md text-center justify-center"
+                                className="inline-flex items-center justify-center gap-3 w-full px-8 py-4 bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold rounded-sm text-lg transition-all shadow-lg hover:shadow-orange-500/20 group"
                             >
-                                <FaExternalLinkAlt />
-                                Ver en Google Maps
+                                <FaExternalLinkAlt className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                                <span>Ver en Google Maps</span>
                             </a>
                         </div>
                     </div>
