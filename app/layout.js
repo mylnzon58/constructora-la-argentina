@@ -55,6 +55,8 @@ export const metadata = {
   },
 };
 
+import ScrollToTop from "@/components/ScrollToTop";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="es-AR">
@@ -65,8 +67,9 @@ export default function RootLayout({ children }) {
         <meta name="ICBM" content="-31.8667, -59.0167" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="antialiased">
+      <body className="antialiased font-body">
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );

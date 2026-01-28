@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Hero = () => {
     return (
-        <section id="inicio" className="relative h-screen min-h-[600px] flex items-center bg-[#0f172a] overflow-hidden pt-20">
+        <section id="inicio" className="relative min-h-screen flex items-center bg-[#0f172a] overflow-hidden pt-32 md:pt-20">
 
             {/* IMAGEN DE FONDO con Overlay Industrial */}
             <div className="absolute inset-0 z-0 select-none">
