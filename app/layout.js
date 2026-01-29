@@ -65,7 +65,6 @@ export default function RootLayout({ children }) {
         <meta name="geo.placename" content="Villaguay" />
         <meta name="geo.position" content="-31.8667;-59.0167" />
         <meta name="ICBM" content="-31.8667, -59.0167" />
-        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="antialiased font-body">
         {children}
