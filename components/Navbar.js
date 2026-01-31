@@ -41,6 +41,7 @@ const Navbar = () => {
                                 fill
                                 className="object-contain object-left"
                                 priority
+                                fetchPriority="high"
                                 sizes="(max-width: 768px) 300px, 600px"
                             />
                         </a>
