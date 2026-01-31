@@ -18,7 +18,7 @@ const About = () => {
                                 fill
                                 className="object-cover"
                                 sizes="(max-width: 1024px) 100vw, 50vw"
-                                quality={75}
+                                quality={65}
                             />
                         </div>
                         {/* Badge Flotante */}
