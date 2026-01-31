@@ -1,6 +1,4 @@
 /* 1. IMPORTACIONES CSS PRIMERO */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap');
-@import 'aos/dist/aos.css';
 
 /* 2. TAILWIND FRAMEWORK */
 @import "tailwindcss";
@@ -100,5 +98,96 @@
     border-color: var(--color-accent);
     transform: translateY(-2px);
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* 5. ANIMACIONES PERSONALIZADAS (Reemplazo de AOS) */
+@layer utilities {
+
+  /* Keyframes para animaciones */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Clases de animación */
+  .animate-on-scroll {
+    opacity: 0;
+  }
+
+  .animate-on-scroll.animate-visible {
+    animation-duration: 800ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: both;
+  }
+
+  .animate-on-scroll.animate-visible.fade-up {
+    animation-name: fadeUp;
+  }
+
+  .animate-on-scroll.animate-visible.fade-in {
+    animation-name: fadeIn;
+  }
+
+  .animate-on-scroll.animate-visible.slide-left {
+    animation-name: slideInLeft;
+  }
+
+  .animate-on-scroll.animate-visible.slide-right {
+    animation-name: slideInRight;
+  }
+
+  /* Delays */
+  .animate-on-scroll.animate-visible.delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animate-on-scroll.animate-visible.delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animate-on-scroll.animate-visible.delay-300 {
+    animation-delay: 300ms;
   }
 }

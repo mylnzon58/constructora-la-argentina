@@ -1,4 +1,19 @@
+import { Manrope, Oswald } from 'next/font/google';
 import "./globals.css";
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-body',
+});
+
+const oswald = Oswald({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-display',
+});
 
 export const metadata = {
   title: "Cooperativa de Construcción La Argentina | Villaguay, Entre Ríos",
@@ -59,8 +74,10 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es-AR">
+    <html lang="es-AR" className={`${manrope.variable} ${oswald.variable}`}>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="geo.region" content="AR-E" />
         <meta name="geo.placename" content="Villaguay" />
         <meta name="geo.position" content="-31.8667;-59.0167" />

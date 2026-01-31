@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { FaTimes, FaSearchPlus } from 'react-icons/fa';
 
 const Portfolio = () => {
@@ -74,10 +75,13 @@ const Portfolio = () => {
                             onClick={() => setSelectedImage(project)}
                         >
                             <div className="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-                                <img
+                                <Image
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                    quality={85}
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
                                     <FaSearchPlus className="text-white opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-300 text-3xl drop-shadow-lg" />
@@ -119,11 +123,14 @@ const Portfolio = () => {
                     </button>
 
                     <div className="bg-white rounded-lg overflow-hidden max-w-4xl w-full flex flex-col md:flex-row shadow-2xl" onClick={e => e.stopPropagation()}>
-                        <div className="md:w-2/3 bg-gray-100">
-                            <img
+                        <div className="md:w-2/3 bg-gray-100 relative min-h-[300px]">
+                            <Image
                                 src={selectedImage.image}
                                 alt={selectedImage.title}
-                                className="w-full h-full object-cover min-h-[300px]"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 66vw"
+                                quality={90}
                             />
                         </div>
                         <div className="md:w-1/3 p-8 flex flex-col justify-center bg-white">

@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+import AnimateOnScroll from './AnimateOnScroll';
 import { FaArrowRight } from 'react-icons/fa';
 
 const Hero = () => {
@@ -10,10 +12,13 @@ const Hero = () => {
             <div className="absolute inset-0 z-0 select-none">
                 {/* Overlay gradiente para legibilidad perfecta del texto blanco */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/95 via-[#0f172a]/80 to-[#0f172a]/30 z-10"></div>
-                <img
+                <Image
                     src="/hero-bg.jpg"
                     alt="Obra en construcción"
-                    className="w-full h-full object-cover opacity-60"
+                    fill
+                    className="object-cover opacity-60"
+                    quality={85}
+                    priority
                 />
             </div>
 
@@ -27,46 +32,54 @@ const Hero = () => {
                     </div>
 
                     {/* TÍTULO H1 TIPOGRÁFICO - Contenido Institucional Adaptado */}
-                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none mb-6 tracking-tight drop-shadow-lg uppercase" data-aos="fade-up">
-                        ¡CONCRETÁ TUS IDEAS <br />
-                        <span className="text-[#94a3b8]">CON CALIDAD!</span>
-                    </h1>
+                    <AnimateOnScroll animation="fade-up">
+                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none mb-6 tracking-tight drop-shadow-lg uppercase">
+                            ¡CONCRETÁ TUS IDEAS <br />
+                            <span className="text-[#94a3b8]">CON CALIDAD!</span>
+                        </h1>
+                    </AnimateOnScroll>
 
                     {/* Texto Institucional */}
-                    <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl mb-12 font-light border-l-4 border-[#ea580c] pl-6" data-aos="fade-up" data-aos-delay="100">
-                        Con experiencia en el sector, ofrecemos servicios de construcción integral en Entre Ríos, adaptándonos a cada proyecto con compromiso y calidad. <br /><br />
-                        <strong className="text-white">Construcción, remodelación y ampliaciones con un enfoque profesional, responsable y orientado a resultados reales.</strong>
-                    </p>
+                    <AnimateOnScroll animation="fade-up" delay={100}>
+                        <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl mb-12 font-light border-l-4 border-[#ea580c] pl-6">
+                            Con experiencia en el sector, ofrecemos servicios de construcción integral en Entre Ríos, adaptándonos a cada proyecto con compromiso y calidad. <br /><br />
+                            <strong className="text-white">Construcción, remodelación y ampliaciones con un enfoque profesional, responsable y orientado a resultados reales.</strong>
+                        </p>
+                    </AnimateOnScroll>
 
                     {/* Botones Profesionales */}
-                    <div className="flex flex-col sm:flex-row gap-5" data-aos="fade-up" data-aos-delay="200">
-                        <a
-                            href="#contacto"
-                            className="inline-flex justify-center items-center gap-3 px-8 py-4 bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold rounded-sm text-lg transition-all shadow-lg hover:shadow-orange-500/20 group"
-                        >
-                            Contactar Ahora
-                            <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-                        </a>
+                    <AnimateOnScroll animation="fade-up" delay={200}>
+                        <div className="flex flex-col sm:flex-row gap-5">
+                            <a
+                                href="#contacto"
+                                className="inline-flex justify-center items-center gap-3 px-8 py-4 bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold rounded-sm text-lg transition-all shadow-lg hover:shadow-orange-500/20 group"
+                            >
+                                Contactar Ahora
+                                <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
+                            </a>
 
-                        <a
-                            href="#obras"
-                            className="inline-flex justify-center items-center gap-3 px-8 py-4 bg-transparent border border-white/30 hover:border-white text-white font-semibold rounded-sm text-lg transition-all hover:bg-white/5"
-                        >
-                            Ver Proyectos
-                        </a>
-                    </div>
+                            <a
+                                href="#obras"
+                                className="inline-flex justify-center items-center gap-3 px-8 py-4 bg-transparent border border-white/30 hover:border-white text-white font-semibold rounded-sm text-lg transition-all hover:bg-white/5"
+                            >
+                                Ver Proyectos
+                            </a>
+                        </div>
+                    </AnimateOnScroll>
 
                     {/* Stats Rápidos */}
-                    <div className="mt-20 flex gap-12 border-t border-white/10 pt-8" data-aos="fade-up" data-aos-delay="300">
-                        <div>
-                            <span className="text-3xl font-bold text-white block">100%</span>
-                            <span className="text-xs text-gray-400 uppercase tracking-wider">Matriculados</span>
+                    <AnimateOnScroll animation="fade-up" delay={300}>
+                        <div className="mt-20 flex gap-12 border-t border-white/10 pt-8">
+                            <div>
+                                <span className="text-3xl font-bold text-white block">100%</span>
+                                <span className="text-xs text-gray-400 uppercase tracking-wider">Matriculados</span>
+                            </div>
+                            <div>
+                                <span className="text-3xl font-bold text-white block">+15</span>
+                                <span className="text-xs text-gray-400 uppercase tracking-wider">Años Exp.</span>
+                            </div>
                         </div>
-                        <div>
-                            <span className="text-3xl font-bold text-white block">+15</span>
-                            <span className="text-xs text-gray-400 uppercase tracking-wider">Años Exp.</span>
-                        </div>
-                    </div>
+                    </AnimateOnScroll>
 
                 </div>
             </div>

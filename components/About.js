@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { FaCheck } from 'react-icons/fa';
 
 const About = () => {
@@ -11,10 +12,13 @@ const About = () => {
                     {/* Imagen Institucional */}
                     <div className="relative order-2 lg:order-1 px-4 lg:px-0">
                         <div className="relative rounded-lg overflow-hidden shadow-xl aspect-[4/3]">
-                            <img
+                            <Image
                                 src="/about-image.jpg"
                                 alt="Equipo de trabajo en obra"
-                                className="w-full h-full object-cover"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                quality={85}
                             />
                         </div>
                         {/* Badge Flotante */}
