@@ -17,7 +17,7 @@ const Hero = () => {
                     alt="Obra en construcción"
                     fill
                     className="object-cover opacity-60"
-                    quality={85}
+                    quality={75}
                     priority
                 />
             </div>

@@ -11,6 +11,10 @@ const nextConfig = {
     // Eliminar console.logs en producción
     removeConsole: process.env.NODE_ENV === 'production',
   },
+  // Excluir transpilación de características modernas
+  experimental: {
+    forceSwcTransforms: true,
+  },
 };
 
 export default nextConfig;

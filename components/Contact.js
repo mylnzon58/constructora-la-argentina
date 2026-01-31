@@ -166,8 +166,9 @@ const Contact = () => {
                             </div>
 
                             <div>
-                                <label className="block text-sm font-bold text-[#64748b] mb-2">Tipo de Obra</label>
+                                <label htmlFor="tipoObra" className="block text-sm font-bold text-[#64748b] mb-2">Tipo de Obra</label>
                                 <select
+                                    id="tipoObra"
                                     name="tipoObra"
                                     value={formData.tipoObra}
                                     onChange={handleChange}

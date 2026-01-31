@@ -81,7 +81,7 @@ const Portfolio = () => {
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                    quality={85}
+                                    quality={75}
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
                                     <FaSearchPlus className="text-white opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-300 text-3xl drop-shadow-lg" />
@@ -130,7 +130,7 @@ const Portfolio = () => {
                                 fill
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw, 66vw"
-                                quality={90}
+                                quality={75}
                             />
                         </div>
                         <div className="md:w-1/3 p-8 flex flex-col justify-center bg-white">
